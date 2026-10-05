@@ -1,2 +1,2 @@
 # JavaTutorialCode
-Codes required to learn java from beginning.
+Codes for learning java.
