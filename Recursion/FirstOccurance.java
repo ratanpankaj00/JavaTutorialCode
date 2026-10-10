@@ -3,7 +3,7 @@ package Recursion;
 public class FirstOccurance {
     public static void main(String[] args) {
         int [] arr = {-10, -10, -3, -1, 0, 0, 2, 2, 2, 5, 8, 9, 11, 11, 23, 46, 46, 50, 90, 98, 98};
-        System.out.println(firstOccurance(arr, -10, 0, arr.length));
+        System.out.println(firstOccurance(arr, 2, 0, arr.length));
     }
 
     private static int firstOccurance(int[] arr, int tar, int i, int j) {
