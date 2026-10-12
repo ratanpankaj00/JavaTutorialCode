@@ -1,10 +1,11 @@
 package Strings;
-
+import java.util.Scanner;
 import java.util.Collection;
 import java.util.Collections;
 
 public class StringBuilders {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         StringBuilder s = new StringBuilder();
         System.out.println(s.length() + " " + s.capacity());
         s.append("Raghav");
@@ -35,7 +36,13 @@ public class StringBuilders {
         s.delete(3,6);
 
         //Sorting possible or not
-        Collections.sort(s);// Does not work.
+        //Collections.sort(s);// Does not work.
+
+
+        //!!! How to take input in STRINGBUILDER : -
+
+        StringBuilder sb = new StringBuilder(sc.nextLine());
+        System.out.println(sb);
 
     }
 }
