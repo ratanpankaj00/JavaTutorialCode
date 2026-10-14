@@ -7,7 +7,7 @@ class LinkedList{
     Node tail;
     int size;
 
-    //Addint element to last.
+    //Adding element to last. TC = O(1), AS = O(1)
     void add(int val){
         Node temp = new Node(val);
         if (head == null) {
@@ -19,7 +19,7 @@ class LinkedList{
     }
 
     
-    //Adding element at head.
+    //Adding element at head. TC = O(1), AS = O(1)
     void addAtHead(int val){
         Node temp = new Node(val);
         if (head == null) {
@@ -32,7 +32,7 @@ class LinkedList{
     }
 
 
-// Displaying whole LinkedList
+// Displaying whole LinkedList. TC = O(n), AS = O(1)
     void display(){
         if (head == null) {
             return;
@@ -52,7 +52,7 @@ class LinkedList{
         System.out.println("]");
     }
 
-    // Deleting head element
+    // Deleting head element. TC = O(1), AS = O(1)
     void deleteHead(){
         if(head == null) return;      
         Node temp = head;
@@ -61,7 +61,7 @@ class LinkedList{
         size--;
     }
 
-    // Deleting last element
+    // Deleting last element. TC = O(1), AS = O(1)
     void deleteTail(){
         Node temp = head;
         if (head == tail){
@@ -77,7 +77,7 @@ class LinkedList{
         size--;    
     }
 
-    // Inserting element in between two elements
+    // Inserting element in between two elements. TC = O(n), AS = O(1)
     void insert(int val, int idx){
         if(idx<0 || idx>size){
             System.out.println("Invalid Index");
@@ -106,7 +106,7 @@ class LinkedList{
     }
 
 
-    // Displaying elements from start to end(excluding end).
+    // Displaying elements from start to end(excluding end). TC = O(n), AS = O(1)
     void display(int st, int end){
         Node temp = head;
         for(int i = 0; i<st; i++){
@@ -118,7 +118,7 @@ class LinkedList{
         }
     }
 
-    // Updating the value of elements.
+    // Updating the value of elements. TC = O(1), AS = O(1)
     void update(int value, int idx){
         Node temp = head;
         for(int i = 0; i<idx; i++){
@@ -127,7 +127,7 @@ class LinkedList{
         temp.val = value;
     }
 
-    //Searching an value in LinkedList and returning its index.
+    //Searching an value in LinkedList and returning its index. TC = O(n), AS = O(1)
     int getIndexOf(int value){
         Node temp = head;
         int idx = 0;
@@ -139,7 +139,7 @@ class LinkedList{
         return -1;
     }
 
-    // Getting the value of index.
+    // Getting the value of index. TC = O(n), AS = O(1)
     void deleteAt(int idx){
         if(idx == 0) {
             deleteHead();
@@ -155,9 +155,6 @@ class LinkedList{
         temp =null;
 
     }
-
-
-
 
 }
 public class DataStructure {  
