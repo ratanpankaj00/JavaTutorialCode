@@ -5,6 +5,11 @@ class Node{
         Node(int d){data = d; next = null;}
 
 
+        public Node() {
+            
+        }
+
+
         // Traditional method to solve this question.
         int getMiddle(Node head){
             int size = 0;
